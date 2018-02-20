@@ -6,19 +6,19 @@ This repository contains a boilerplate for PyQt5 based applications.
 Features
 --------
 
-- Dependency management using `pipenv`_
+- Dependency management using pipenv_
 - Use the *standard* ``setup.py`` to build resources, docs, etc.
 - Manage resources and UI forms using a Qt Creator project
 - Generate a *compiled* application for Windows, Linux and macOS using
-  `PyInstaller`_
+  PyInstaller_
 - Multilanguage support
-- Document using `Sphinx`_
+- Document using Sphinx_
 - Flake8 linting
 
 Getting started
 ---------------
 
-First of all make sure you have `pipenv`_ installed and then initialize a
+First of all make sure you have pipenv_ installed and then initialize a
 working development environment like this::
 
     pipenv install --dev
@@ -68,7 +68,7 @@ be generated like this::
 Documentation
 -------------
 
-`Sphinx`_ is used for documentation purposes. You can tweak its configuration in
+Sphinx_ is used for documentation purposes. You can tweak its configuration in
 ``docs/conf.py`` and the documentation can be built like this::
 
     python setup.py build_docs
@@ -78,12 +78,12 @@ Linting
 
 Flake8 is a great tool to check for style issues, unused imports and similar
 stuff. You can tweak ``.flake8`` to ignore certain types of errors, increase the
-maximum line length, etc. `pipenv`_ integrates Flake8, you can run it like
+maximum line length, etc. pipenv_ integrates Flake8, you can run it like
 this::
 
     pipenv check --style app
 
 
-.. pipenv:: https://docs.pipenv.org/
-.. PyInstaller:: http://www.pyinstaller.org/
-.. Sphinx:: http://www.sphinx-doc.org/
+.. _pipenv: https://docs.pipenv.org/
+.. _PyInstaller: http://www.pyinstaller.org/
+.. _Sphinx: http://www.sphinx-doc.org/
