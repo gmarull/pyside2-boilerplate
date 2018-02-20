@@ -3,14 +3,14 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../views/MainWindow.ui" line="14"/>
-        <source>MainWindow</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../views/MainWindow.ui" line="34"/>
         <source>HELLO!</source>
         <translation>HOLA!</translation>
+    </message>
+    <message>
+        <location filename="../views/MainWindow.ui" line="14"/>
+        <source>App</source>
+        <translation></translation>
     </message>
 </context>
 </TS>
