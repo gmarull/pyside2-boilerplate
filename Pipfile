@@ -1,0 +1,19 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+"pyqt5" = "*"
+
+
+[dev-packages]
+
+pyqt-distutils = "*"
+pyinstaller = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+"e1839a8" = {path = ".", editable = true}
