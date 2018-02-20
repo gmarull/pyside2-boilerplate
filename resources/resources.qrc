@@ -9,5 +9,6 @@
         <file>icons/demo.svg</file>
         <file>icons/app.icns</file>
         <file>icons/app.ico</file>
+        <file>icons/app.svg</file>
     </qresource>
 </RCC>

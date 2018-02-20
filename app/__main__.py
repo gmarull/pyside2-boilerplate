@@ -12,7 +12,7 @@ from . import resources_rc  # noqa
 def main():
     app = QApplication(sys.argv)
 
-    app.setWindowIcon(QIcon(':/icons/app.ico'))
+    app.setWindowIcon(QIcon(':/icons/app.svg'))
 
     fontDB = QFontDatabase()
     fontDB.addApplicationFont(':/fonts/Roboto-Regular.ttf')
