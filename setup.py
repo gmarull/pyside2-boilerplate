@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
 import re
+import os
 from subprocess import check_call
 
-from setuptools import setup, find_packages
-from setuptools import Command
+from setuptools import setup, find_packages, Command
+from setuptools.command.sdist import sdist
 
 
 cmdclass = {}
@@ -12,9 +13,9 @@ cmdclass = {}
 
 try:
     from pyqt_distutils.build_ui import build_ui
-    cmdclass['build_ui'] = build_ui
+    has_build_ui = True
 except ImportError:
-    pass
+    has_build_ui = False
 
 try:
     from sphinx.setup_command import BuildDoc
@@ -27,21 +28,35 @@ with open('app/__init__.py') as f:
     _version = re.search(r'__version__\s+=\s+\'(.*)\'', f.read()).group(1)
 
 
-class build_tr(Command):
-    """Build translations."""
+if has_build_ui:
+    class build_res(build_ui):
+        """Build UI, resources and translations."""
 
-    description = 'Build translations'
-    user_options = []
+        def run(self):
+            # build translations
+            check_call(['pylupdate5', 'app.pro'])
 
-    def initialize_options(self):
-        pass
+            lrelease = os.environ.get('LRELEASE_BIN')
+            if not lrelease:
+                lrelease = 'lrelease'
 
-    def finalize_options(self):
-        pass
+            check_call([lrelease, 'app.pro'])
+
+            # build UI & resources
+            build_ui.run(self)
+
+    cmdclass['build_res'] = build_res
+
+
+class custom_sdist(sdist):
+    """Custom sdist command."""
 
     def run(self):
-        check_call(['pylupdate5', 'app.pro'])
-        check_call(['lrelease', 'app.pro'])
+        self.run_command('build_res')
+        sdist.run(self)
+
+
+cmdclass['sdist'] = custom_sdist
 
 
 class bdist_app(Command):
@@ -57,10 +72,10 @@ class bdist_app(Command):
         pass
 
     def run(self):
+        self.run_command('build_res')
         check_call(['pyinstaller', '-y', 'app.spec'])
 
 
-cmdclass['build_tr'] = build_tr
 cmdclass['bdist_app'] = bdist_app
 
 

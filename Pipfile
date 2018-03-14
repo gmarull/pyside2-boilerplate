@@ -7,13 +7,14 @@ name = "pypi"
 
 [packages]
 
-"pyqt5" = "*"
+"PyQt5" = "*"
 
 
 [dev-packages]
 
 pyqt-distutils = "*"
-pyinstaller = "*"
-sphinx = "*"
-sphinx-rtd-theme = "*"
+PyInstaller = "*"
+Sphinx = "*"
+sphinx_rtd_theme = "*"
 "e1839a8" = {path = ".", editable = true}
+"flake8" = "*"

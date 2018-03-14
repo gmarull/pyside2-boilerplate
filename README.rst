@@ -42,22 +42,17 @@ Resources and translations
 --------------------------
 
 In order to ease the development process, the Qt Creator project ``app.pro`` is
-provided. You can open it to edit the UI files or to manage resources. The
-Python source files are also present on the project so that the translation tool
-can extract strings from sources. Qt Linguist can be used to translate.
-
-You can build the resources and UI files like this::
-
-    python setup.py build_ui
-
+provided. You can open it to edit the UI files or to manage resources.
 Translations can be edited using Qt Linguist, part of the Qt SDK. In order to
-build the translations, you will need to have the Qt SDK tools to your ``PATH``,
-in particular the ``lrelease`` command. Translations can be built like this::
+build the translations, you will need to have the ``lrelease`` command on your
+``PATH`` or set its full path to the ``LRELEASE_BIN`` environment variable.
+Resources, including UI files, translations and resources can be built like
+this::
 
-    python setup.py build_tr
+    python setup.py build_res
 
-Note that these steps are also required prior to installation and/or
-distribution.
+Note that this command is automatically run before running `sdist` and
+`bdist_app` commands.
 
 Compiled application
 --------------------
@@ -81,10 +76,9 @@ Linting
 
 Flake8 is a great tool to check for style issues, unused imports and similar
 stuff. You can tweak ``.flake8`` to ignore certain types of errors, increase the
-maximum line length, etc. pipenv_ integrates Flake8, you can run it like
-this::
+maximum line length, etc. You can run it like this::
 
-    pipenv check --style app
+    flake8 app
 
 
 .. _pipenv: https://docs.pipenv.org/
