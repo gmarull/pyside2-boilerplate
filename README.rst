@@ -46,8 +46,7 @@ provided. You can open it to edit the UI files or to manage resources.
 Translations can be edited using Qt Linguist, part of the Qt SDK. In order to
 build the translations, you will need to have the ``lrelease`` command on your
 ``PATH`` or set its full path to the ``LRELEASE_BIN`` environment variable.
-Resources, including UI files, translations and resources can be built like
-this::
+UI files, translations and resources can be built like this::
 
     python setup.py build_res
 
