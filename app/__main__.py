@@ -6,7 +6,7 @@ from PySide2.QtWidgets import QApplication
 
 from .views.MainWindow import MainWindow
 
-from . import resources_rc  # noqa
+from .ui import resources_rc  # noqa
 
 
 def main():
