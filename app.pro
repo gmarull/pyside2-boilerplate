@@ -4,7 +4,7 @@ SOURCES += \
     app/views/MainWindow.py
 
 FORMS += \
-    resources/views/MainWindow.ui
+    resources/ui/MainWindow.ui
 
 RESOURCES += \
     resources/resources.qrc \
