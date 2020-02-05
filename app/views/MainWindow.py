@@ -1,11 +1,11 @@
-from PyQt5.QtWidgets import QMainWindow
+from PySide2.QtWidgets import QMainWindow
 
-from .MainWindow_ui import Ui_MainWindow
+from ..ui.MainWindow_ui import Ui_MainWindow
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     """Main Window."""
 
-    def __init__(self):
-        QMainWindow.__init__(self)
+    def __init__(self, parent=None):
+        super().__init__(parent)
         self.setupUi(self)

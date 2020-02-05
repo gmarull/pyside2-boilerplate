@@ -1,8 +1,8 @@
 import sys
 
-from PyQt5.QtGui import QFontDatabase, QFont, QIcon
-from PyQt5.QtCore import QFile, QTextStream, QTranslator, QLocale
-from PyQt5.QtWidgets import QApplication
+from PySide2.QtGui import QFontDatabase, QFont, QIcon
+from PySide2.QtCore import QFile, QTextStream, QTranslator, QLocale
+from PySide2.QtWidgets import QApplication
 
 from .views.MainWindow import MainWindow
 
