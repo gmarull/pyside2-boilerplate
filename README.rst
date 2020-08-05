@@ -34,7 +34,7 @@ Linux::
 
 Windows::
 
-    .\venv\Scripts\activate.ps1
+    .\.venv\Scripts\activate.ps1
 
 Then install the application in development mode::
 
