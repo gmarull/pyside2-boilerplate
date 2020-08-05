@@ -28,22 +28,13 @@ First of all create a new virtual environment::
 
 Then activate it::
 
-On Linux::
+Linux::
 
     source .venv/bin/activate
 
-On Windows::
+Windows::
 
     .\venv\Scripts\activate.ps1
-
-If PowerShell throws an UnauthorizedAccess error, verify that the execution policy is not Restricted::
-
-    Get-ExecutionPolicy
-
-In that case set it to a more permissive policy::
-
-    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-
 
 Then install the application in development mode::
 
@@ -104,3 +95,12 @@ maximum line length, etc. You can run it like this::
 
 .. _PyInstaller: http://www.pyinstaller.org/
 .. _Sphinx: http://www.sphinx-doc.org/
+
+Troubleshooting
+---------------
+
+If PowerShell throws an UnauthorizedAccess error, verify that the execution policy is not Restricted::
+
+    Get-ExecutionPolicy
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
