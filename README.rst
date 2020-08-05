@@ -22,10 +22,27 @@ Features
 Getting started
 ---------------
 
-First of all create a new virtual environment and activate it::
+First of all create a new virtual environment::
 
     python3 -m venv .venv
+
+Then activate it::
+
+On Linux::
+
     source .venv/bin/activate
+
+On Windows::
+
+    .\venv\Scripts\activate.ps1
+
+If PowerShell throws an UnauthorizedAccess error, verify that the execution policy is not Restricted::
+
+    Get-ExecutionPolicy
+
+In that case set it to a more permissive policy::
+
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
 Then install the application in development mode::
