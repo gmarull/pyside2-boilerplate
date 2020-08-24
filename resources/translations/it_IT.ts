@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1" language="es">
+<!DOCTYPE TS><TS version="1.1" language="it_IT">
 <context>
     <name>@default</name>
     <message>
         <location filename="app/views/MainWindow.py" line="17"/>
         <source>Hello, click the logo for informations about Qt</source>
-        <translation type="obsolete">Hola, haga clic en el logotipo para obtener información sobre Qt</translation>
+        <translation type="obsolete">Ciao, clicca il logo per avere informazioni su Qt</translation>
     </message>
 </context>
 <context>
@@ -18,12 +18,12 @@
     <message>
         <location filename="resources/ui/widgets/AboutWidget.ui" line="33"/>
         <source>About Qt</source>
-        <translation>Acerca de Qt</translation>
+        <translation>Info su Qt</translation>
     </message>
     <message>
         <location filename="resources/ui/widgets/AboutWidget.ui" line="61"/>
         <source>Version:</source>
-        <translation>Versión:</translation>
+        <translation>Versione:</translation>
     </message>
     <message>
         <location filename="resources/ui/widgets/AboutWidget.ui" line="82"/>
@@ -33,7 +33,7 @@
     <message>
         <location filename="resources/ui/widgets/AboutWidget.ui" line="75"/>
         <source>Qt Version:</source>
-        <translation>Versión Qt:</translation>
+        <translation>Versione Qt:</translation>
     </message>
 </context>
 <context>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../ui/widgets/AboutWidget.ui" line="75"/>
         <source>HELLO!</source>
-        <translation type="obsolete">HOLA!</translation>
+        <translation type="obsolete">CIAO!</translation>
     </message>
     <message>
         <location filename="resources/ui/MainWindow.ui" line="14"/>
@@ -51,7 +51,7 @@
     <message>
         <location filename="app/views/MainWindow.py" line="16"/>
         <source>Hello, click the logo for informations about Qt</source>
-        <translation type="unfinished">Hola, haga clic en el logotipo para obtener información sobre Qt</translation>
+        <translation type="unfinished">Ciao, clicca il logo per avere informazioni su Qt</translation>
     </message>
 </context>
 </TS>
