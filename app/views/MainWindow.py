@@ -17,3 +17,4 @@ class MainWindow(QMainWindow):
         clickQt.setWordWrap(True)
         clickQt.setText(hello)
         self.ui.verticalLayout.insertWidget(0, clickQt)
+        self.adjustSize()
