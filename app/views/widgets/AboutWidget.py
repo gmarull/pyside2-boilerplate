@@ -1,7 +1,7 @@
 from PySide2.QtWidgets import QWidget, QApplication
 from PySide2.QtCore import qVersion
 
-from app.Constants import APP_VERSION
+import app
 
 from app.ui.AboutWidget_ui import Ui_AboutWidget
 
@@ -14,7 +14,7 @@ class AboutWidget(QWidget):
         self.ui = Ui_AboutWidget()
         self.ui.setupUi(self)
 
-        self.ui.version.setText(APP_VERSION)
+        self.ui.version.setText(app.__version__)
         self.ui.qtVersion.setText(qVersion())
 
         self.ui.builtWithQtBtn.clicked.connect(qApp.aboutQt)

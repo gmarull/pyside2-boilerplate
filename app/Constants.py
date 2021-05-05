@@ -1,1 +1,3 @@
-APP_VERSION = "1.0"
+from app import __version__
+
+APP_VERSION = __version__
