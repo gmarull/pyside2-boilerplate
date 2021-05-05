@@ -1,7 +1,7 @@
 from PySide2.QtCore import QCoreApplication
 from PySide2.QtWidgets import QMainWindow, QLabel
 
-from ..ui.MainWindow_ui import Ui_MainWindow
+from app.ui.MainWindow_ui import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
