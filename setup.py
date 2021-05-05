@@ -91,7 +91,7 @@ setup(
     name="app",
     version=_version,
     packages=find_packages(),
-    description="PyQt5 Boilerplate",
+    description="PySide2 Boilerplate",
     author="Gerard Marull-Paretas",
     author_email="gerardmarull@gmail.com",
     license="MIT",
