@@ -5,11 +5,11 @@
             "app/ui"
         ],
         [
-            "resources/ui/*.ui",
+            "app/*.ui",
             "app/ui"
         ],
         [
-            "resources/ui/**/*.ui",
+            "app/**/*.ui",
             "app/ui"
         ]
     ],

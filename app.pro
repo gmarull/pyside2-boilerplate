@@ -5,8 +5,8 @@ SOURCES += \
     app/views/widgets/AboutWidget.py
 
 FORMS += \
-    resources/ui/MainWindow.ui \
-    resources/ui/widgets/AboutWidget.ui
+    app/views/MainWindow.ui \
+    app/views/widgets/AboutWidget.ui
 
 RESOURCES += \
     resources/resources.qrc \
