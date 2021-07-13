@@ -12,9 +12,12 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        hello = QCoreApplication.translate("MainWindow", "Hello, click the logo for informations about Qt")
+        hello = self.__tr("Hello, click the logo for informations about Qt")
         clickQt = QLabel(self)
         clickQt.setWordWrap(True)
         clickQt.setText(hello)
         self.ui.verticalLayout.insertWidget(0, clickQt)
         self.adjustSize()
+
+    def __tr(self, txt, disambiguation=None, n=-1):
+        return QCoreApplication.translate("MainWindow", txt, disambiguation, n)
