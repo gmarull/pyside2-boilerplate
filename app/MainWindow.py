@@ -20,5 +20,6 @@ class MainWindow(QMainWindow):
         # self.adjustSize()
 
 
+    # Needed for https://bugreports.qt.io/browse/PYSIDE-131
     def __tr(self, txt, disambiguation=None, n=-1):
         return QCoreApplication.translate("MainWindow", txt, disambiguation, n)
