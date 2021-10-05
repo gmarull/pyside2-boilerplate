@@ -3,7 +3,7 @@ from PySide2.QtCore import qVersion
 
 import app
 
-from app.ui.AboutWidget_ui import Ui_AboutWidget
+from app._ui.AboutWidget_ui import Ui_AboutWidget
 
 
 class AboutWidget(QWidget):

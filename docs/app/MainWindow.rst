@@ -2,6 +2,5 @@
 MainWindow
 ==========
 
-.. automodule:: app.views.MainWindow
+.. automodule:: app.MainWindow
     :members:
-

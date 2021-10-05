@@ -1,7 +1,7 @@
 from PySide2.QtCore import QCoreApplication
 from PySide2.QtWidgets import QMainWindow, QLabel
 
-from app.ui.MainWindow_ui import Ui_MainWindow
+from app._ui.MainWindow_ui import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
@@ -14,10 +14,11 @@ class MainWindow(QMainWindow):
 
         hello = self.__tr("Hello, click the logo for informations about Qt")
         clickQt = QLabel(self)
-        clickQt.setWordWrap(True)
+        # clickQt.setWordWrap(True)
         clickQt.setText(hello)
         self.ui.verticalLayout.insertWidget(0, clickQt)
-        self.adjustSize()
+        # self.adjustSize()
+
 
     def __tr(self, txt, disambiguation=None, n=-1):
         return QCoreApplication.translate("MainWindow", txt, disambiguation, n)

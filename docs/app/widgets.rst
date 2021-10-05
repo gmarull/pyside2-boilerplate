@@ -1,9 +1,9 @@
-=====
-Views
-=====
+=======
+Widgets
+=======
 
 .. toctree::
     :glob:
     :maxdepth: 2
 
-    views/*
+    widgets/*

@@ -48,7 +48,7 @@ if has_build_ui:
             # build UI & resources
             build_ui.run(self)
             # create __init__ file for compiled ui
-            open("app/ui/__init__.py", "a").close()
+            open("app/_ui/__init__.py", "a").close()
 
     cmdclass["build_res"] = build_res
 

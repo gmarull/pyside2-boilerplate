@@ -4,9 +4,9 @@ from PySide2.QtGui import QFontDatabase, QFont, QIcon
 from PySide2.QtCore import QFile, QTextStream, QTranslator, QLocale
 from PySide2.QtWidgets import QApplication
 
-from .views.MainWindow import MainWindow
+from .MainWindow import MainWindow
 
-from .ui import resources_rc  # noqa
+from ._ui import resources_rc  # noqa
 
 
 def main():

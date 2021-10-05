@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>344</width>
-    <height>130</height>
+    <width>340</width>
+    <height>131</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,7 +29,7 @@
          </size>
         </property>
         <property name="pixmap">
-         <pixmap resource="../resources.qrc">:/images/python-logo-dark.png</pixmap>
+         <pixmap resource="../resources/resources.qrc">:/images/python-logo-dark.png</pixmap>
         </property>
        </widget>
       </item>
@@ -55,12 +55,14 @@
   <customwidget>
    <class>AboutWidget</class>
    <extends>QWidget</extends>
-   <header>app/views/widgets/AboutWidget</header>
+   <header>app/widgets/AboutWidget</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../resources.qrc"/>
+  <include location="../resources/resources.qrc"/>
+  <include location="../resources/resources.qrc"/>
+  <include location="../../resources/resources.qrc"/>
  </resources>
  <connections/>
 </ui>
