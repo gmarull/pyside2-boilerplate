@@ -4,7 +4,7 @@ Qt for Python Application Boilerplate
 This repository contains a boilerplate for Qt for Python (PySide2) based
 applications.
 
-.. image:: https://user-images.githubusercontent.com/25011557/36483230-da4620c6-1715-11e8-9ee5-c10053641440.png
+.. image:: https://user-images.githubusercontent.com/18352578/136023093-031fb8cd-632f-4ee1-8fa6-e60706c3242f.png
     :alt: Qt for Python Application Boilerplate
 
 Features
